@@ -33,3 +33,5 @@ The goal of this project is to bridge the gap between simple AI chat interfaces 
 2. Install dependencies: `npm run install-all`
 3. Setup `.env` file with your `GEMINI_API_KEY` and `MONGO_URI`.
 4. Run development server: `npm run dev`
+
+## Happy Coding!!!!
