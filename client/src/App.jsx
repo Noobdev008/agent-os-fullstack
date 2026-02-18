@@ -36,11 +36,11 @@ function App() {
   };
 
   return (<>
-
-      <h1 className="bg-agentDark text-blue-400 p-6 text-4xl font-extrabold text-center rounded-xl shadow-lg mb-10">
+{/* <div className='bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl'> */}
+      <h1 className="bg-agentDark text-blue-400 p-6 text-4xl font-extrabold text-center rounded-xl shadow-lg ">
         Agent-OS Environment Active!
       </h1>
-    <div className="min-h-screen bg-gray-900 text-white p-5">
+    <div className="min-h-screen bg-gray-900 text-white p-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl">
 
       {/* 4. Chat History Display */}
       <div className="max-w-3xl mx-auto space-y-4 mb-20">
@@ -53,6 +53,7 @@ function App() {
         <ChatInput onSendMessage={handleChat} /> 
       </div>
     </div>
+    {/* </div> */}
       </>
   )
 }
