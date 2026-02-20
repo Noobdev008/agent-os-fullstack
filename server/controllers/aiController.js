@@ -37,7 +37,7 @@ export const getAIResponse = async (req, res) => {
     const result = await chat.sendMessage(prompt);
     
     // 4. Return Data
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       data: result.response.text(), // data key use karein frontend consistency ke liye
     });
@@ -45,7 +45,7 @@ export const getAIResponse = async (req, res) => {
   } catch (error) {
     // Exact error debugging ke liye terminal mein print karein
     console.error("Gemini 2.5 Error Detail:", error.response?.data || error.message);
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       error: error.message,
     });
